@@ -1,0 +1,27 @@
+pipeline {
+    
+    
+    agent {
+        label 'ssh-slave'
+    }
+    
+    stages {
+        
+        stage('Git'){
+            
+            steps {
+                
+                git credentialsId: 'private-repo', url: 'https://github.com/OmarSolimanDev/nodjs-mysql-crud-project'
+                
+            }
+            
+            
+            
+        }
+        
+        
+        
+        
+        
+    }
+}
