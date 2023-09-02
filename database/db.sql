@@ -1,14 +1,13 @@
-
 -- create user --
-CREATE USER 'myuser'@'localhost' IDENTIFIED BY 'Password123@';
-GRANT ALL PRIVILEGES ON *.* TO 'myuser'@'localhost';
+CREATE USER 'zaky'@'%' IDENTIFIED BY 'zakypass';
+GRANT ALL PRIVILEGES ON *.* TO 'zaky'@'%';
 FLUSH PRIVILEGES;
 
 -- to create a new database
-CREATE DATABASE customersdb;
+CREATE DATABASE zakydb;
 
 -- to use database
-use customersdb;
+use zakydb;
 
 -- creating a new table
 CREATE TABLE customer (
